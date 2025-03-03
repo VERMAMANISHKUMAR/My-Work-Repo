@@ -1,0 +1,237 @@
+.Money-transfer-list {
+          font-family: 'Poppins', sans-serif;
+          max-width: 900px;
+          margin: 50px auto;
+          padding: 25px;
+          background: #ffffff;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          margin-right: 10px;
+        }
+        
+        .header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+          flex-wrap: wrap;
+          font-size: 10px;
+        }
+        
+        .list-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 20px;
+          flex-wrap: wrap;
+        }
+        
+        .create-coupon-btn {
+          background-color: #2FA9A9;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        
+        .create-coupon-btn:hover {
+          background-color: #258c8c;
+        }
+        
+        .subheader {
+          color: #888;
+          font-size: 0.9em;
+        }
+        
+        .filters {
+          background-color: #f8f8f8;
+          padding: 20px;
+          border-radius: 5px;
+          margin-bottom: 20px;
+          border-top: 3px solid #3C8DBC;
+        }
+        
+        .table-controls {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          margin-bottom: 15px;
+        }
+        
+        .Entries-per-page {
+          display: flex;
+          align-items: center;
+        }
+        
+        .Entries-per-page label {
+          margin: 0 5px;
+        }
+        
+        .Entries-per-page select {
+          padding: 5px;
+        }
+        
+        .Table-actions {
+          display: flex;
+          
+        }
+        
+        .Table-actions button {
+          padding: 8px;
+          border: 1px solid #ccc;
+          
+          background-color: #2FA9A9;
+          color: white;
+          transition: 0.3s;
+          cursor: pointer;
+        }
+        
+        .Table-actions button:hover {
+          background-color: #258c8c;
+        }
+        
+        .search-input {
+          padding: 8px;
+          border: 1px solid #ccc;
+          width: 150px;
+        }
+        
+        .Transfer-table {
+          width: 100%;
+          border-collapse: collapse;
+          
+        }
+        
+        .Transfer-table th,
+        .Transfer-table td {
+          padding: 10px;
+          text-align:left;
+          font-size: 10px;
+          font-weight: 700;
+          border-bottom: 1px solid #eee;
+        }
+        
+        .Transfer-table th {
+          background-color: #f0f0f0;
+          
+        }
+        
+        .no-data {
+          text-align: center;
+          padding: 20px;
+          color: #888;
+        }
+        
+        .pagination {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 20px;
+          flex-wrap: wrap;
+        }
+        
+        .pagination-controls button {
+          padding: 8px 12px;
+          margin-left: 5px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+        
+       
+        /* ============= RESPONSIVE DESIGN ============= */
+        
+        /* Adjust for tablets (max-width: 768px) */
+        @media screen and (max-width: 768px) {
+          .money-transfer-list {
+            padding: 15px;
+          }
+          .Transfer-table thead th:nth-child(n+4), /* Hide columns from the 4th onwards */
+          .Transfer-table tbody td:nth-child(n+4) {
+              display: none;
+          }
+          .header, 
+          .list-header, 
+          .table-controls {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+        
+          .Table-actions {
+            justify-content: space-between;
+            width: 100%;
+          }
+        
+          .Table-actions input {
+            width: 100%;
+          }
+        
+          .Entries-per-page select {
+            width: 100px;
+          }
+        
+          .create-coupon-btn {
+            width: 100%;
+            text-align: center;
+          }
+        
+          .pagination {
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+        
+        /* Adjust for mobile screens (max-width: 480px) */
+        @media screen and (max-width: 480px) {
+          .money-transfer-list {
+            width: 95%;
+            margin: 20px auto;
+            padding: 10px;
+          }
+        
+          .header h3 {
+            font-size: 18px;
+          }
+        
+          .table-controls {
+            flex-direction: column;
+            gap: 10px;
+          }
+        
+          .Entries-per-page {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+        
+          .Table-actions {
+            flex-direction: column;
+            width: 100%;
+          }
+        
+          .Table-actions button {
+            width: 100%;
+            text-align: center;
+          }
+        
+          .Transfer-table th, 
+          .Transfer-table td {
+            font-size: 10px;
+             padding: 8px;
+             
+          }
+          
+          .pagination-controls {
+            flex-direction: column;
+            width: 100%;
+          }
+        
+          .pagination-controls button {
+            width: 100%;
+            margin-top: 5px;
+          }
+        }
+        

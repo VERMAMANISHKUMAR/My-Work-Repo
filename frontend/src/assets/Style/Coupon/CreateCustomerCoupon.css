@@ -1,0 +1,289 @@
+.main-cantenar{
+  background-color: #ECF0F5;
+}
+
+/* Overall Page Layout */
+.page-wrapper {
+  font-family: 'Poppins', sans-serif;
+  max-width: 1000px;
+  /* margin: 20px; */
+  padding: 20px;
+  background: #FFF;
+  border-top: 3px solid #3C8DBC;
+  border-radius: 10px;
+  margin-left: 12rem;
+  margin-bottom: 30px;
+}
+
+/* Header Styles */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 25px;
+  background-color: #ECF0F5;
+  margin-top: 4rem;
+  max-width: 1000px;
+  margin-left: 12rem;
+}
+
+.page-title {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.navigation-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.nav-link-h {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #3C8DBC;
+
+}
+
+/* Main Content Wrapper */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form Container Styles */
+.form-container-coupon {
+  width: 650px;
+  padding: 30px;
+}
+
+/* Form Header */
+.form-header {
+  margin-bottom: 40px;
+}
+
+.form-header p {
+  margin: 0;
+  color: #717171;
+  /* font-size: 1rem; */
+}
+
+/* Form Layout */
+.coupon-form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Form Group Layout */
+.form-group.custom-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.form-group.custom-layout label {
+  padding-top: 5px;
+  font-weight: 500;
+  color: black;
+  text-align: right;
+  flex-shrink: 0; /* Prevent label from shrinking */
+}
+
+.form-group.custom-layout .dropdown-container,
+.form-group.custom-layout input,
+.form-group.custom-layout textarea {
+  width: 411px;
+}
+
+/* Dropdown Styles */
+.dropdown-container {
+  position: relative;
+  width: 411px;
+}
+
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  position: absolute;
+  width: 100%;
+  background: white;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  margin-top: 2px;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.dropdown-list li {
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.dropdown-list li:hover {
+  background-color: #3C8DBC;
+  color: #FFFFFF;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.clear-icon {
+  cursor: pointer;
+  margin-left: 5px;
+}
+/* -----------coupon code----------- */
+/* Ensure input and icon are aligned */
+.input-group {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* Style for the input field */
+.input-group input {
+  /* flex: 1; */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Style for the refresh icon */
+.icon-refresh {
+  font-size: 20px;
+  color: #3C8DBC;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.icon-refresh:hover {
+  color: #45a049;
+}
+
+/* Additional padding for form inputs if needed */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group .manish {
+  font-size: 16px;
+}
+
+/* ---------------- */
+/* Input & Textarea Styles */
+input, textarea {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+textarea:hover {
+  border: 1px solid #3C8DBC;
+}
+
+textarea {
+  resize: none;
+  height: 50px;
+}
+
+/* Button Styles */
+.form-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-save, .btn-close {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  width: 160px;
+  height: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-close {
+  background-color: #ffc107;
+}
+
+.btn-save:hover {
+  background-color: #218838;
+}
+
+.btn-close:hover {
+  background-color: #e0a800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .page-wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .form-container-coupon {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .form-group.custom-layout {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .form-group.custom-layout label {
+    text-align: left;
+    padding-top: 0;
+  }
+
+  .form-group.custom-layout .dropdown-container,
+  .form-group.custom-layout input,
+  .form-group.custom-layout textarea {
+    width: 100%;
+  }
+
+  .form-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn-save, .btn-close {
+    width: 100%;
+  }
+}
