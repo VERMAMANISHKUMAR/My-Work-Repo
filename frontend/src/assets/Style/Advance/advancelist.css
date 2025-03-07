@@ -1,0 +1,246 @@
+.Advance-Payments-List {
+          font-family: 'Poppins', sans-serif;
+          max-width: 900px;
+          margin: 50px auto;
+          padding: 25px;
+          background: #ffffff;
+          border-radius: 10px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          margin-right: 10px;
+        }
+        .Advancelist-app-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 15px 25px;
+          background-color: #ECF0F5;
+          margin-top: -10px;
+          margin-bottom:10px;
+          max-width: 1000px;
+      }
+        .Advance-Payments-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-bottom: 20px;
+          flex-wrap: wrap;
+          font-size: 10px;
+        }
+        
+        .Advance-Payments-header-list-header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 20px;
+          flex-wrap: wrap;
+        }
+        
+        .Advance-Payments-create-btn {
+          background-color:#00ACD6;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: 0.3s;
+        }
+        
+        .Advance-Payments-create-btn:hover {
+          background-color: #258c8c;
+        }
+        
+        .Advance-Payments-subheader{
+          color: #888;
+          font-size: 0.9em;
+        }
+        
+        .Advance-Payments-filters {
+          background-color: #f8f8f8;
+          padding: 20px;
+          border-radius: 5px;
+          margin-bottom: 20px;
+          border-top: 3px solid #3C8DBC;
+        }
+        
+        .Advance-Payments-table-controls{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+          margin-bottom: 15px;
+        }
+        
+        .Advance-Payments-Entries-per-page {
+          display: flex;
+          align-items: center;
+        }
+        
+        .Advance-Payments-Entries-per-page label {
+          margin: 0 5px;
+        }
+        
+        .Advance-Payments-Entries-per-page select {
+          padding: 5px;
+        }
+        
+        .Advance-Payments-Table-actions {
+          display: flex;
+         
+        }
+        
+        .Advance-Payments-Table-actions button {
+          padding:8px;
+          border: 1px solid #ccc;
+          background-color: #2FA9A9;
+          color: white;
+          transition: 0.3s;
+          cursor: pointer;
+
+        }
+        
+        .Advance-Payments-Table-actions button:hover {
+          background: #00ACD6;
+        }
+        
+        .Advance-Payments-search-input {
+          padding: 8px;
+          border: 1px solid #ccc;
+          width: 150px;
+        }
+        
+        .Advance-Payments-tables {
+          width: 100%;
+          border-collapse: collapse;
+          
+        }
+        
+        .Advance-Payments-tables th,
+        .Advance-Payments-tables td {
+          padding: 5px;
+          text-align:left;
+          font-size: 15px;
+          font-weight: 700;
+          border-bottom: 1px solid #eee;
+        }
+        
+        .Advance-Payments-tables th {
+          background-color: #f0f0f0;
+          
+        }
+        
+        .Advance-Payments-no-data {
+          text-align: center;
+          padding: 20px;
+          color: #888;
+        }
+        
+        .Advance-Payments-pagination {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: 20px;
+          flex-wrap: wrap;
+        }
+        
+        .Advance-Payments-pagination-controls button {
+          padding: 8px 12px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          cursor: pointer;
+        
+        }
+        
+       
+        /* ============= RESPONSIVE DESIGN ============= */
+        
+        /* Adjust for tablets (max-width: 768px) */
+        @media screen and (max-width: 768px) {
+          .money-transfer-list {
+            padding: 15px;
+          }
+          .Transfer-table thead th:nth-child(n+4), /* Hide columns from the 4th onwards */
+          .Transfer-table tbody td:nth-child(n+4) {
+              display: none;
+          }
+          .header, 
+          .list-header, 
+          .table-controls {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+        
+          .Advance-Payments-Table-actions {
+            justify-content: space-between;
+            width: 100%;
+          }
+        
+          .Advance-Payments-Table-actions input {
+            width: 100%;
+          }
+        
+          .Entries-per-page select {
+            width: 100px;
+          }
+        
+          .create-coupon-btn {
+            width: 100%;
+            text-align: center;
+          }
+        
+          .pagination {
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+        
+        /* Adjust for mobile screens (max-width: 480px) */
+        @media screen and (max-width: 480px) {
+          .money-transfer-list {
+            width: 95%;
+            margin: 20px auto;
+            padding: 10px;
+          }
+        
+          .header h3 {
+            font-size: 18px;
+          }
+        
+          .table-controls {
+            flex-direction: column;
+            gap: 10px;
+          }
+        
+          .Entries-per-page {
+            flex-direction: column;
+            align-items: flex-start;
+          }
+        
+          .Advance-Payments-Table-actions {
+            flex-direction: column;
+            width: 100%;
+          }
+        
+          .Advance-Payments-Table-actions button {
+            width: 100%;
+            text-align: center;
+          }
+        
+          .Transfer-table th, 
+          .Transfer-table td {
+            font-size: 10px;
+             padding: 8px;
+             
+          }
+          
+          .pagination-controls {
+            flex-direction: column;
+            width: 100%;
+          }
+        
+          .pagination-controls button {
+            width: 100%;
+            margin-top: 5px;
+          }
+        }
+        

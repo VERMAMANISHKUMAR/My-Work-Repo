@@ -1,6 +1,6 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Importing React Router for navigation
-import { useState } from 'react'; // Importing useState hook for managing sidebar state
-import styled from 'styled-components'; // Importing styled-components for styling
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState } from 'react'; 
+import styled from 'styled-components';
 
 // Importing components
 import Navbar from './component/Navbar/index';
@@ -19,6 +19,9 @@ import CreateCustomerCoupon from './coupens/CreateCustomerCoupon'
 import CustomerCouponsList from './coupens/CustomerCouponsList'
 import CreateCoupon from './coupens/CreateCoupon'
 import CoupensMaster from './coupens/CouponsMaster'
+// ---------------Advance----------------------------------
+import Advance from './advance/addadvance'
+import Advancelist from './advance/advancelist'
 // Styled component for the main app layout
 const AppContainer = styled.div`
   display: grid;
@@ -80,6 +83,9 @@ function App() {
             <Route path="/customercoupons-list" element={<CustomerCouponsList/>}/>
             <Route path="/create-coupon" element={<CreateCoupon/>}/>
             <Route path='/coupons-master' element={<CoupensMaster/>}/>
+            {/* ----------------------Advance-------------------------------------------- */}
+            <Route path="/add-advance" element={<Advance/>}/>
+            <Route path='/advance-list' element={<Advancelist/>}/>
           </Routes>
         </MainContent>
       </AppContainer>

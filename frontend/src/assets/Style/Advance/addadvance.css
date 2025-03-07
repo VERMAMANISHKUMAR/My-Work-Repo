@@ -1,12 +1,11 @@
-.main-cantenar{
+.Advance-main-cantenar{
   background-color: #ECF0F5;
 }
 
 /* Overall Page Layout */
-.page-wrapper {
+.Advance-page-wrapper {
   font-family: 'Poppins', sans-serif;
-  max-width: 1000px;
-
+  max-width: 900px;
   padding: 20px;
   background: #FFF;
   border-top: 3px solid #3C8DBC;
@@ -14,9 +13,8 @@
   margin-left: 12rem;
   margin-bottom: 30px;
 }
-
 /* Header Styles */
-.app-header {
+.Advance-app-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,20 +25,20 @@
   margin-left: 12rem;
 }
 
-.page-title {
+.Advance-page-title {
   font-size: 1rem;
   font-weight: 500;
   color: #333;
 }
 
-.navigation-links {
+.Advance-navigation-links {
   display: flex;
   align-items: center;
   gap: 8px;
   font-size: 0.9rem;
 }
 
-.nav-link-h {
+.Advance-nav-link-h {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -49,63 +47,60 @@
 }
 
 /* Main Content Wrapper */
-.content-wrapper {
+.Advance-content-wrapper {
   display: flex;
   flex-direction: column;
 }
 
 /* Form Container Styles */
-.form-container-coupon {
+/* .Advance-form-container-coupon {
   width: 650px;
   padding: 30px;
-}
+} */
 
 /* Form Header */
-.form-header {
+.Advance-form-header {
   margin-bottom: 40px;
 }
 
-.form-header p {
+.Advance-form-header p {
   margin: 0;
   color: #717171;
-  /* font-size: 1rem; */
+
 }
 
-/* Form Layout */
-.coupon-form {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
+
 
 /* Form Group Layout */
-.form-group.custom-layout {
+.Advance-form-group.custom-layout {
   display: flex;
-  align-items: flex-start;
-  gap: 30px;
+  gap:8px;
+  font-size: 11px;
+  padding-bottom: 10px;
+
 }
 
-.form-group.custom-layout label {
-  padding-top: 5px;
-  font-weight: 500;
+.Advance-form-group.custom-layout label {
+  
+ margin:1px;
   color: black;
-  text-align: right;
-  flex-shrink: 0; /* Prevent label from shrinking */
+  flex-shrink: 0;
+
 }
 
-.form-group.custom-layout .dropdown-container,
-.form-group.custom-layout input,
-.form-group.custom-layout textarea {
-  width: 411px;
+.Advance-form-group.custom-layout .Advance-dropdown-container,
+.Advance-form-group.custom-layout input,
+.Advance-form-group.custom-layout textarea {
+  width: 300px;
 }
 
 /* Dropdown Styles */
-.dropdown-container {
+.Advance-dropdown-container {
   position: relative;
-  width: 411px;
+  width:300px;
 }
 
-.dropdown-header {
+.Advance-dropdown-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -113,9 +108,10 @@
   border: 1px solid #d0d0d0;
   border-radius: 4px;
   cursor: pointer;
+  font-size:15px;
 }
 
-.dropdown-content {
+.Advance-dropdown-content {
   position: absolute;
   width: 100%;
   background: white;
@@ -126,7 +122,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.dropdown-list {
+.Advance-dropdown-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -134,47 +130,31 @@
   overflow-y: auto;
 }
 
-.dropdown-list li {
+.Advance-dropdown-list li {
   padding: 8px 12px;
   cursor: pointer;
 }
 
-.dropdown-list li:hover {
+.Advance-dropdown-list li:hover {
   background-color: #3C8DBC;
   color: #FFFFFF;
 }
-
-.search-input {
-  width: 100%;
-  padding: 0.5rem 0.75rem;
-  border: 1px solid #d0d0d0;
-  border-radius: 4px;
-  font-size: 1rem;
-  box-sizing: border-box;
+.Advance-nav-link-h {
+  text-decoration: none; 
+  color: inherit; 
+  transition: color 0.3s ease-in-out;
+  font-size:10px;
+}
+.Advance-nav-link-h:hover {
+  color: #3C8DBC; 
 }
 
-.clear-icon {
+
+.Advance-clear-icon {
   cursor: pointer;
   margin-left: 5px;
 }
-/* -----------coupon code----------- */
-/* Ensure input and icon are aligned */
-.input-group {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
 
-/* Style for the input field */
-.input-group input {
-  /* flex: 1; */
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 14px;
-}
-
-/* Style for the refresh icon */
 .icon-refresh {
   font-size: 20px;
   color: #3C8DBC;
@@ -195,27 +175,14 @@
   font-size: 16px;
 }
 
-/* ---------------- */
-/* Input & Textarea Styles */
-input, textarea {
-  padding: 0.5rem 0.75rem;
-  border: 1px solid #d0d0d0;
-  border-radius: 4px;
-  font-size: 1rem;
-  box-sizing: border-box;
-}
 
-textarea:hover {
-  border: 1px solid #3C8DBC;
-}
 
-textarea {
-  resize: none;
-  height: 50px;
-}
+
+
+
 
 /* Button Styles */
-.form-actions {
+.Advance-form-actions {
   display: flex;
   justify-content: center;
   margin-top: 20px;
@@ -226,7 +193,7 @@ textarea {
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
-  width: 160px;
+  width: 120px;
   height: 40px;
   font-size: 1rem;
   cursor: pointer;
